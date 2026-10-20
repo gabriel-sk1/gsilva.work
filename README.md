@@ -2,6 +2,8 @@
 
 Portfólio pessoal desenvolvido com Next.js, React, TypeScript, Tailwind CSS e componentes do [Kumo](https://kumo-ui.com/).
 
+Este projeto está disponível sob a licença [MIT](LICENSE). Você pode usar, copiar, modificar e distribuir o site, desde que mantenha o aviso de copyright e a licença. Logos e marcas de terceiros continuam pertencendo aos seus respectivos proprietários.
+
 ## Executar localmente
 
 ```bash
