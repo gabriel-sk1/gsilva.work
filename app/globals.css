@@ -1,0 +1,61 @@
+@source "../node_modules/@cloudflare/kumo/dist/**/*.{js,jsx,ts,tsx}";
+@import "@cloudflare/kumo/styles/tailwind";
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: clip;
+  background: var(--kumo-base);
+  color: var(--kumo-default);
+}
+
+::selection {
+  background: var(--color-kumo-brand);
+  color: white;
+}
+
+@keyframes logo-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes logo-marquee-reverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+.animate-logo-marquee {
+  animation: logo-marquee 42s linear infinite;
+}
+
+.animate-logo-marquee-reverse {
+  animation: logo-marquee-reverse 46s linear infinite;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-kumo-focus);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .animate-logo-marquee,
+  .animate-logo-marquee-reverse {
+    animation: none;
+  }
+}
