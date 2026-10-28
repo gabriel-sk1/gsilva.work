@@ -1,0 +1,28 @@
+name: Dependabot security auto-merge
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - labeled
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  enable-auto-merge:
+    if: >-
+      github.event.pull_request.user.login == 'dependabot[bot]' &&
+      contains(github.event.pull_request.labels.*.name, 'security')
+    runs-on: ubuntu-latest
+    steps:
+      # Do not check out or execute code from the pull request in this
+      # privileged pull_request_target workflow.
+      - name: Enable squash auto-merge
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: gh pr merge --auto --squash "$PR_URL"

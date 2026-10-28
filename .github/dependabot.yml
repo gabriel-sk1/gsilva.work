@@ -1,0 +1,27 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:00"
+      timezone: America/Sao_Paulo
+    # Keep this repository focused on security fixes. Security update PRs
+    # are not subject to this limit; ordinary version update PRs are disabled.
+    open-pull-requests-limit: 0
+    labels:
+      - dependencies
+      - security
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:00"
+      timezone: America/Sao_Paulo
+    open-pull-requests-limit: 0
+    labels:
+      - dependencies
+      - security

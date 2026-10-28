@@ -55,8 +55,8 @@ export function PortfolioHero() {
             <span aria-current="page" className="font-medium text-kumo-strong">Gabriel Silva</span>
           </nav>
           <div className="flex items-center gap-2">
-            <a href="https://github.com/bielsk1" target="_blank" rel="noreferrer" aria-label="GitHub de Gabriel Silva" className="inline-flex h-8 items-center gap-2 rounded-md px-2 text-sm text-kumo-subtle hover:bg-kumo-tint hover:text-kumo-strong"><GithubLogo size={16} aria-hidden="true" />GitHub</a>
-            <a href="https://linkedin.com/in/gabriel-silva-9a0494426" target="_blank" rel="noreferrer" aria-label="LinkedIn de Gabriel Silva" className="inline-flex h-8 items-center gap-2 rounded-md px-2 text-sm text-kumo-subtle hover:bg-kumo-tint hover:text-kumo-strong"><LinkedinLogo size={16} aria-hidden="true" />LinkedIn</a>
+            <a href="https://www.linkedin.com/in/gabriel-s-9a0494426/" target="_blank" rel="noreferrer" aria-label="GitHub de Gabriel Silva" className="inline-flex h-8 items-center gap-2 rounded-md px-2 text-sm text-kumo-subtle hover:bg-kumo-tint hover:text-kumo-strong"><GithubLogo size={16} aria-hidden="true" />GitHub</a>
+            <a href="https://github.com/gabriel-sk1" target="_blank" rel="noreferrer" aria-label="LinkedIn de Gabriel Silva" className="inline-flex h-8 items-center gap-2 rounded-md px-2 text-sm text-kumo-subtle hover:bg-kumo-tint hover:text-kumo-strong"><LinkedinLogo size={16} aria-hidden="true" />LinkedIn</a>
           </div>
         </div>
         <nav aria-label="Navegação principal" className="mt-3 -mb-px flex gap-1 overflow-x-auto border-b border-kumo-line [scrollbar-width:thin] [scrollbar-color:var(--color-kumo-line)_transparent] [--scroll-fade-width:2rem]" data-overflowing>
